@@ -13,7 +13,7 @@
 <template>
     <form @submit.prevent="add">
         <input type="text" v-model="name" placeholder="Todo name..." />
-        <button type="submit">Add</button>
+        <input type="submit" value="Add"/>
     </form>
 </template>
 

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import TodoItem from './components/todo-item.vue'
 import TodoForm from './components/TodoForm.vue'
+import TodoSearch from './components/search-component.vue'
 
 let todos = ref([])
 
@@ -18,6 +19,7 @@ const add = (name: string) => {
 
 <template>
   <h1>Vu3-T0d0-0-M4t1c</h1>
+  <TodoSearch/>
   <TodoForm @create="add" />
   <TodoItem v-for="todo in todos" :key=todo :name=todo @delete="remove"/>
 </template>
